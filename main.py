@@ -35,7 +35,6 @@ df = pd.get_dummies(df, columns=['Destination'], drop_first=True)
 df = pd.get_dummies(df, columns=['VIP'], drop_first=True)
 df = pd.get_dummies(df, columns=['HomePlanet'], drop_first=True)
 df = pd.get_dummies(df, columns=['Transported'], drop_first=True)
-df = pd.get_dummies(df, columns=['Cabin'], drop_first=True)
 df = pd.get_dummies(df, columns=['CryoSleep'], drop_first=True)
 
 df.to_csv("processed_titanic.csv", index=False)
